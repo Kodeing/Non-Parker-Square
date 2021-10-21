@@ -4,6 +4,11 @@ from time import time
 from math import factorial
 import json
 
+import sys
+
+if sys.version_info[0] != 3:
+    raise Exception("Requires python of version 3")
+
 """
 Square list index pattern
 [0][1][2]
